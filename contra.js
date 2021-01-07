@@ -17,7 +17,7 @@ for (const file of commandFiles) {
 client.on("error", console.error);
 
 client.on('ready', () => {
-    client.user.setActivity('Bakımda')
+    client.user.setActivity('Artık Geçici Süreliğine 7/24')
     console.log('Botumuz Aktif')
 });
 
