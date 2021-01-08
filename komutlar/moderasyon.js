@@ -4,7 +4,7 @@ module.exports = {
     const { MessageEmbed } = require('discord.js')
       const embed = new  MessageEmbed()
       .setTitle('Moderasyon Komutları')
-      .addField('Moderasyon Komutları', ' +kanalsil <kanal> | +kick <kişi> | +ban <kişi> | +sunucukur |')
+      .addField('Moderasyon Komutları', ' +kanalsil <kanal> | +kick <kişi> | +ban <kişi> |')
       message.channel.send(embed)
     }
  }
