@@ -33,7 +33,11 @@ girişçıkış.send(`Neden Çıktın Daha Kibir Çalıcaktık :disappointed_rel
 
 
 
-
+client.on('message', msg => {
+ if (msg.content.toLowerCase() ===  'ismail') {
+   msg.channel.send('**aMıNa kOduMun KarIsı lahMaCun yeMiş beNde iYi teMizLeyEmeMiŞim**');
+ }
+});
 
 
 
