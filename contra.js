@@ -21,15 +21,7 @@ client.on('ready', () => {
     console.log('Botumuz Aktif')
 });
 
-client.on('guildMemberAdd', member => {
- const girişçıkış = member.guild.channels.cache.find(channel => channel.name === 'gelen-giden');
- girişçıkış.send(`Contra Farkıyla Hoşgeldin Reis, ${member}`);
-});
 
-client.on('guildMemberRemove', member => {
-const girişçıkış = member.guild.channels.cache.find(channel => channel.name === 'gelen-giden');
-girişçıkış.send(`Neden Çıktın Daha Kibir Çalıcaktık :disappointed_relieved:  ${member}`);
-});
 
 
 
@@ -49,11 +41,7 @@ client.on("guildMemberAdd", member => {
 
 
 
-client.on('message', msg => {
- if (msg.content.toLowerCase() === prefix + 'kansahibi') {
-   msg.channel.send('pOp piYasSI biTmİŞ lEğn kOrkUlaRı eNDer haTta reYNmen');
- }
-});
+
 
 client.on('message', msg => {
  if (msg.content.toLowerCase() === prefix + 'contraadam') {
