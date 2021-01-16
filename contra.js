@@ -17,7 +17,7 @@ for (const file of commandFiles) {
 client.on("error", console.error);
 
 client.on('ready', () => {
-    client.user.setActivity('BAKIM , BAKIMDA')
+    client.user.setActivity('AK-47 dEki mErmi yErinE hAğk bAlgAm')
     console.log('Botumuz Aktif')
 });
 
