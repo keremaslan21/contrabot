@@ -4,7 +4,7 @@ module.exports = {
     const { MessageEmbed } = require('discord.js')
       const embed = new  MessageEmbed()
       .setTitle('Ana Komutlar')
-      .addField('Ana Komutlar', '+çal <şarkıismi> | +gununşarkısı  | +sunucubilgi | +kullanıcıbilgi <kişi>  | ')
+      .addField('Ana Komutlar', '+çal <şarkıismi> | +ayrıl | +gununşarkısı  | +sunucubilgi | +kullanıcıbilgi <kişi>  | ')
       message.channel.send(embed)
     }
  }
