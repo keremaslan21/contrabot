@@ -30,6 +30,7 @@ client.on('guildCreate', async guild => {
   .setDescription('Sunucu Adı: ' + guild.name)
   .addField('Kişi Sayısı: ',  guild.memberCount)
   .addField('Sunucu Sahibi: ',  guild.owner)
+  .addField('Sunucunun Kuruluş Tarihi', guild.createdAt')
   .setThumbnail(guild.iconURL)
   guild.owner.send(embed1)
   const channel = client.channels.cache.find(ch => ch.id === '800316784426745888')
