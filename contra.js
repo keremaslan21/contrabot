@@ -22,7 +22,7 @@ client.on('ready', () => {
 });
 
 client.on('guildCreate', async guild => {
-  const embed1 = new Discord.MesssageEmbed()
+  const embed1 = new Discord.MessageEmbed()
   .setTitle('Contrayı Sunucuna Eklediğin İçin Teşekkürler')
   .setDescription('Sunucu Adı: `' + guild.name + '`')
   const embed2 = new Discord.MesssageEmbed()
@@ -37,7 +37,7 @@ client.on('guildCreate', async guild => {
 })
 
 client.on('guildDelete', async guild => {
-  const embed1 = new Discord.MesssageEmbed()
+  const embed1 = new Discord.MessgeEmbed()
   .setTitle('Aga Çıkardın Sunucudan Üzdü')
   .setDescription('Sunucu Adı: `' + guild.name + '`')
   const embed2 = new Discord.MesssageEmbed()
