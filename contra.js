@@ -21,7 +21,37 @@ client.on('ready', () => {
     console.log('Botumuz Aktif')
 });
 
+client.on('guildCreate', async guild => {
+  const embed1 = new Discord.MesssageEmbed()
+  .setTitle('Contrayı Sunucuna Eklediğin İçin Teşekkürler')
+  .setDescription('Sunucu Adı: `' + guild.name + '`')
+  const embed2 = new Discord.MesssageEmbed()
+  .setTitle('Bir Reis Beni Sunucusuna Ekledi!')
+  .setDescription('Sunucu Adı: ' + guild.name)
+  .addField('Kişi Sayısı: ' + guild.memberCount)
+  .addField('Sunucu Sahibi: ' + guild.owner)
+  .addField('Sunucunun Kuruluş Tarihi: ' guild.createdAt)
+  .setThumbnail(guild.iconURL)
+  .guild.owner.send(embed1)
+  const channel = client.channels.cache.find(ch => ch.id === '800316784426745888')
+  channel.send(embed2)
+})
 
+client.on('guildDelete', async guild => {
+  const embed1 = new Discord.MesssageEmbed()
+  .setTitle('Aga Çıkardın Sunucudan Üzdü')
+  .setDescription('Sunucu Adı: `' + guild.name + '`')
+  const embed2 = new Discord.MesssageEmbed()
+  .setTitle('Biri Beni Sunucusundan Çıkardı :cry: ')
+  .setDescription('Sunucu Adı: ' + guild.name)
+  .addField('Kişi Sayısı: ' + guild.memberCount)
+  .addField('Sunucu Sahibi: ' + guild.owner)
+  .addField('Sunucunun Kuruluş Tarihi: ' guild.createdAt)
+  .setThumbnail(guild.iconURL)
+  .guild.owner.send(embed1)
+  const channel = client.channels.cache.find(ch => ch.id === '800316784426745888')
+  channel.send(embed2)
+})
 
 
 
