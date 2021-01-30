@@ -39,11 +39,11 @@ module.exports = {
           });
       } else {
         // The mentioned user isn't in this guild
-        message.reply("That user isn't in this guild!");
+        message.reply("ERROR!");
       }
       // Otherwise, if no user was mentioned
     } else {
-      message.reply("Yetkin Yok Kb ");
+      message.reply("ERROR!");
     }
  }
 }
