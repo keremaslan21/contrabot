@@ -37,11 +37,11 @@ module.exports = {
           });
       } else {
         // The mentioned user isn't in this guild
-        message.reply("That user isn't in this guild!");
+        message.reply("ERROR!");
       }
     } else {
       // Otherwise, if no user was mentioned
-      message.reply("You didn't mention the user to ban!");
+      message.reply("ERROR!");
     }
  }
 };
