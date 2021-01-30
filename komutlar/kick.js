@@ -33,7 +33,7 @@ module.exports = {
             // An error happened
             // This is generally due to the bot not being able to kick the member,
             // either due to missing permissions or role hierarchy
-            message.reply('Herkes Arzularken Ben Siker Geçerim');
+            message.reply('Herkes Arzularken Ben Siker Geçerim :middle_finger: ');
             // Log the error
             console.error(err);
           });
