@@ -25,7 +25,7 @@ module.exports = {
           })
           .then(() => {
             // We let the message author know we were able to ban the person
-            message.reply(`Herkes Arzularken Ben Siker Geçerim :sunglasses:  Tekmelediğim Herif ${user.tag}`);
+            message.reply(`Herkes Arzularken Ben Siker Geçerim :sunglasses:  Tekmelediğim Herif ${user.tag} :middle_finger: `);
           })
           .catch(err => {
             // An error happened
