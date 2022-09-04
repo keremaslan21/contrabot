@@ -4,9 +4,8 @@ module.exports = {
   async run (client, message, args) {
     const { MessageEmbed } = require('discord.js')
       const embed = new  MessageEmbed()
-      .setTitle('BENIM GERÇEK KURUCUM rotanizm#1029 Bilginize')
-      .addField('TIKTOK  ', '[TİKTOK](https://www.tiktok.com/@rota.exe)')
-      .addField('INSTAGRAM  ', '[INSTAGRAM](https://www.instagram.com/rotanizm.exe/)')
+      .setTitle('BENIM GERÇEK KURUCUM Kaname#8932 Bilginize')
+      .addField('INSTAGRAM  ', '[INSTAGRAM](https://www.instagram.com/qwx.katsui//)')
       message.channel.send(embed)
     }
  }
